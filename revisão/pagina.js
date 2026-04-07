@@ -2,7 +2,7 @@ function pagina(){
  
     const container = document.querySelector(".container");
  
-    // criando elementos (como a atividade pediu)
+    // criando elementos 
     const titulo = document.createElement("h2");
     titulo.textContent = "Lista de Tarefas";
  
@@ -24,7 +24,7 @@ function pagina(){
     container.appendChild(botao);
     container.appendChild(lista);
  
-    // seu código (ajustado só o necessário)
+    
     botao.addEventListener("click", () => {
  
         const novaTarefa = document.createElement("li");
@@ -59,5 +59,3 @@ function pagina(){
     });
 }
  
-// garante que rode depois do HTML carregar
-document.addEventListener("DOMContentLoaded", pagina);
