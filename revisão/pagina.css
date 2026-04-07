@@ -1,0 +1,12 @@
+body{
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    padding: 20px;   
+}
+.desatque{
+    background-color: rgb(255, 251, 7);
+    font-weight: bold;
+}
+.removido{
+    text-decoration: line-through;
+    color: gray
+}
