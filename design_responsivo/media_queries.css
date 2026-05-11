@@ -1,0 +1,29 @@
+.grid-container{
+    display: grid;
+    gap: 20px; /* Espaçamento entre os cartões */
+    padding: 20px;
+    /* Mobile First: 1 coluna por padrão*/
+    grid-template-columns: 1fr; /* Uma unica coluna que ocupa todo o espaço disponível */
+}
+
+.card{
+    background-color: rgb(45, 94, 163);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Tablet 2 colunas */
+@media(min-width: 600px){
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas de larguras iguais */
+    }
+}
+
+
+/* Desktop 3 colunas */
+@media(min-width: 900px){
+    .grid-container{
+        grid-template-columns: repeat(3, 1fr); /* Três colunas de larguras iguais */
+    }
+}

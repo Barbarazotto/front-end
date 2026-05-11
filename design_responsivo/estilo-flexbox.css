@@ -1,0 +1,64 @@
+/*Estilos gerais para melhor vizualização*/
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin:0;
+    padding:0;
+    background-color: #f4f4f46c;
+    color: #333;
+}
+
+header, footer {
+    background-color: rgba(74, 0, 4, 0.925);
+    color: #e6e0e0c3;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+/*CSS do exemplo de leiaute fluido*/
+.container {
+    display: flex; /* Habilita o Flexbox */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se não couberem.*/
+    width: 90%;
+    max-width: 1200px; /* Limite maximo para telas grandes */ 
+    margin: 20px auto; /* Centraliza o container e adiciona margem superior */
+    gap: 2%; /* Espaçamento entre os itens flex*/
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.conteudo-principal{
+    flex-basis: 68%; /* Base de largura, pode encolher/crscer*/
+    flex-grow: 1;
+    background-color: #e0e0e0;
+    padding: 15px;
+    box-sizing: border-box; /* Para o padding não aumentar a largura total */
+}
+
+.barra-lateral ul{
+    list-style: none;
+    padding: 0;
+}
+.barra-lateral ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.barra-lateral ul li a:hover {
+    text-decoration: underline;
+}
+
+.barra-lateral {
+    flex-basis: 30%; /* Largura da base */
+    flex-grow: 1;
+    background-color: #e0e0e0;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Para telas menores, fariamo-los empilharem 
